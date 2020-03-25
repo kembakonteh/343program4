@@ -1,0 +1,344 @@
+Last login: Fri Mar 13 23:42:37 on ttys000
+Kembas-MBP:~ kembakonteh$ ssh kembak@csslab12.uwb.edu
+kembak@csslab12.uwb.edu's password: 
+Last login: Fri Mar 13 23:42:45 2020 from 10.102.96.116
+-bash-4.2$ ls
+AnswersToReferenceDemo.txt..txt  DependInfo.cmake  link.txt
+Ass1                             depend.internal   Maze.cpp
+ass3                             depend.make       Primitive3.cpp.o
+Ass6                             Exercise1         program03
+Assignment2                      flags.make        Program1
+Assignment3                      HW3               program2
+assignment4                      HW5               Program2
+Assignment4                      Lab02             Program _2
+BankTransOut.txt                 Lab1              program3
+build.make                       Lab2AllFiles      program4
+cmake_clean.cmake                Lab3AllFiles      progress.make
+CXX.includecache                 Lab5
+-bash-4.2$ cd program4
+-bash-4.2$ ls
+Business.cpp       data4commands.txt   Inventory.h       Transaction.cpp
+Business.h         data4customers.txt  main.cpp          Transaction.h
+cmake-build-debug  data4movies.txt     Movie.cpp         Utility.cpp
+CMakeLists.txt     HashTable.cpp       MovieFactory.cpp  Utility.h
+Customer.cpp       HashTable.h         MovieFactory.h
+Customer.h         Inventory.cpp       Movie.h
+-bash-4.2$ g++ -std=c++11 *.cpp
+-bash-4.2$ ./a.out
+Loading Movie inventory from data4movies.txt
+Invalid Movie type: Z
+ignored: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Invalid Movie type: Z
+ignored: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+
+Loading Customers from data4customers.txt
+Number of customers loaded: 12
+
+Processing transactions from data4commands.txt
+
+Printing inventory:
+---------------------------------------------------------------------------------------------------------
+Title                           | Stock  | Director             | Code | Comments                       | 
+---------------------------------------------------------------------------------------------------------
+Annie Hall                      | 10     | Woody Allen          | F    | 1977                           | 
+Fargo                           | 10     | Joel Coen            | F    | 1996                           | 
+National Lampoon's Animal House | 10     | John Landis          | F    | 1978                           | 
+Pirates of the Caribbean        | 10     | Gore Verbinski       | F    | 2003                           | 
+Sleepless in Seattle            | 10     | Nora Ephron          | F    | 1993                           | 
+When Harry Met Sally            | 10     | Rob Reiner           | F    | 1989                           | 
+You've Got Mail                 | 10     | Nora Ephron          | F    | 1998                           | 
+Good Morning Vietnam            | 10     | Barry Levinson       | D    | 1988                           | 
+Unforgiven                      | 10     | Clint Eastwood       | D    | 1992                           | 
+Good Will Hunting               | 10     | Gus Van Sant         | D    | 2000                           | 
+Silence of the Lambs            | 10     | Jonathan Demme       | D    | 1991                           | 
+Dogfight                        | 10     | Nancy Savoca         | D    | 1991                           | 
+King of Hearts                  | 10     | Phillippe De Broca   | D    | 1967                           | 
+Schindler's List                | 10     | Steven Spielberg     | D    | 1993                           | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+The Wizard of Oz                | 10     | Victor Fleming       | C    |  7 1939                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Maltese Falcon              | 10     | John Huston          | C    |  10 1941                       | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+A Clockwork Orange              | 10     | Stanley Kubrick      | C    |  2 1971                        | 
+Harold and Maude                | 10     | Hal Ashby            | C    |  3 1971                        | 
+---------------------------------------------------------------------------------------------------------
+
+Transaction history for customer Minnie Mouse:
+No transactions available.
+
+Transaction history for customer Freddie Frog:
+No transactions available.
+
+Transaction history for customer Wally Wacky:
+No transactions available.
+
+Invalid Movie type: Z
+Skipping line: B 1111 D Z 2 1971 Malcolm McDowell
+
+invalid action code: X
+Skipping line: X
+
+invalid action code: Z
+Skipping line: Z 1000 D C 10 1941 Humphrey Bogart
+
+Invalid customer id: 1234
+Skipping line: B 1234 D C 2 1971 Malcolm McDowell
+
+Unable to find movie line: B 1000 D F Bogus Title, 2001
+
+Invalid media type: Z
+Skipping line: B 1000 Z F Fargo, 1996
+
+Checkout: no copies available for movie Harold and Maude
+
+Checkout: no copies available for movie Harold and Maude
+
+Checkout: no copies available for movie Harold and Maude
+
+Unable to find movie line: B 1000 D D Steven Spielberg, Bogus Title,
+
+
+Printing inventory:
+---------------------------------------------------------------------------------------------------------
+Title                           | Stock  | Director             | Code | Comments                       | 
+---------------------------------------------------------------------------------------------------------
+Annie Hall                      | 9      | Woody Allen          | F    | 1977                           | 
+Fargo                           | 9      | Joel Coen            | F    | 1996                           | 
+National Lampoon's Animal House | 9      | John Landis          | F    | 1978                           | 
+Pirates of the Caribbean        | 10     | Gore Verbinski       | F    | 2003                           | 
+Sleepless in Seattle            | 9      | Nora Ephron          | F    | 1993                           | 
+When Harry Met Sally            | 9      | Rob Reiner           | F    | 1989                           | 
+You've Got Mail                 | 9      | Nora Ephron          | F    | 1998                           | 
+Good Morning Vietnam            | 9      | Barry Levinson       | D    | 1988                           | 
+Unforgiven                      | 9      | Clint Eastwood       | D    | 1992                           | 
+Good Will Hunting               | 9      | Gus Van Sant         | D    | 2000                           | 
+Silence of the Lambs            | 9      | Jonathan Demme       | D    | 1991                           | 
+Dogfight                        | 8      | Nancy Savoca         | D    | 1991                           | 
+King of Hearts                  | 9      | Phillippe De Broca   | D    | 1967                           | 
+Schindler's List                | 9      | Steven Spielberg     | D    | 1993                           | 
+Holiday                         | 9      | George Cukor         | C    |  9 1938                        | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+The Wizard of Oz                | 10     | Victor Fleming       | C    |  7 1939                        | 
+The Philadelphia Story          | 8      | George Cukor         | C    |  5 1940                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Maltese Falcon              | 9      | John Huston          | C    |  10 1941                       | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+A Clockwork Orange              | 9      | Stanley Kubrick      | C    |  2 1971                        | 
+Harold and Maude                | 0      | Hal Ashby            | C    |  3 1971                        | 
+---------------------------------------------------------------------------------------------------------
+
+Transaction history for customer Minnie Mouse:
+Good Morning Vietnam borrowed by Minnie Mouse
+The Philadelphia Story borrowed by Minnie Mouse
+Good Will Hunting borrowed by Minnie Mouse
+The Philadelphia Story borrowed by Minnie Mouse
+Harold and Maude borrowed by Minnie Mouse
+
+Transaction history for customer Mickey Mouse:
+A Clockwork Orange borrowed by Mickey Mouse
+Harold and Maude borrowed by Mickey Mouse
+The Maltese Falcon borrowed by Mickey Mouse
+Holiday borrowed by Mickey Mouse
+
+Transaction history for customer Freddie Frog:
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+
+Transaction history for customer Wally Wacky:
+You've Got Mail borrowed by Wally Wacky
+You've Got Mail returned by Wally Wacky
+Harold and Maude borrowed by Wally Wacky
+Harold and Maude borrowed by Wally Wacky
+National Lampoon's Animal House borrowed by Wally Wacky
+
+Transaction history for customer Porky Pig:
+Annie Hall borrowed by Porky Pig
+When Harry Met Sally borrowed by Porky Pig
+Silence of the Lambs borrowed by Porky Pig
+Dogfight borrowed by Porky Pig
+Harold and Maude borrowed by Porky Pig
+
+-bash-4.2$ 
+-bash-4.2$ valgrind --leak-check=full ./a.out
+==27876== Memcheck, a memory error detector
+==27876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27876== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==27876== Command: ./a.out
+==27876== 
+Loading Movie inventory from data4movies.txt
+Invalid Movie type: Z
+ignored: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Invalid Movie type: Z
+ignored: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+
+Loading Customers from data4customers.txt
+Number of customers loaded: 12
+
+Processing transactions from data4commands.txt
+
+Printing inventory:
+---------------------------------------------------------------------------------------------------------
+Title                           | Stock  | Director             | Code | Comments                       | 
+---------------------------------------------------------------------------------------------------------
+Annie Hall                      | 10     | Woody Allen          | F    | 1977                           | 
+Fargo                           | 10     | Joel Coen            | F    | 1996                           | 
+National Lampoon's Animal House | 10     | John Landis          | F    | 1978                           | 
+Pirates of the Caribbean        | 10     | Gore Verbinski       | F    | 2003                           | 
+Sleepless in Seattle            | 10     | Nora Ephron          | F    | 1993                           | 
+When Harry Met Sally            | 10     | Rob Reiner           | F    | 1989                           | 
+You've Got Mail                 | 10     | Nora Ephron          | F    | 1998                           | 
+Good Morning Vietnam            | 10     | Barry Levinson       | D    | 1988                           | 
+Unforgiven                      | 10     | Clint Eastwood       | D    | 1992                           | 
+Good Will Hunting               | 10     | Gus Van Sant         | D    | 2000                           | 
+Silence of the Lambs            | 10     | Jonathan Demme       | D    | 1991                           | 
+Dogfight                        | 10     | Nancy Savoca         | D    | 1991                           | 
+King of Hearts                  | 10     | Phillippe De Broca   | D    | 1967                           | 
+Schindler's List                | 10     | Steven Spielberg     | D    | 1993                           | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+The Wizard of Oz                | 10     | Victor Fleming       | C    |  7 1939                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Maltese Falcon              | 10     | John Huston          | C    |  10 1941                       | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+A Clockwork Orange              | 10     | Stanley Kubrick      | C    |  2 1971                        | 
+Harold and Maude                | 10     | Hal Ashby            | C    |  3 1971                        | 
+---------------------------------------------------------------------------------------------------------
+
+Transaction history for customer Minnie Mouse:
+No transactions available.
+
+Transaction history for customer Freddie Frog:
+No transactions available.
+
+Transaction history for customer Wally Wacky:
+No transactions available.
+
+Invalid Movie type: Z
+Skipping line: B 1111 D Z 2 1971 Malcolm McDowell
+
+invalid action code: X
+Skipping line: X
+
+invalid action code: Z
+Skipping line: Z 1000 D C 10 1941 Humphrey Bogart
+
+Invalid customer id: 1234
+Skipping line: B 1234 D C 2 1971 Malcolm McDowell
+
+Unable to find movie line: B 1000 D F Bogus Title, 2001
+
+Invalid media type: Z
+Skipping line: B 1000 Z F Fargo, 1996
+
+Checkout: no copies available for movie Harold and Maude
+
+Checkout: no copies available for movie Harold and Maude
+
+Checkout: no copies available for movie Harold and Maude
+
+Unable to find movie line: B 1000 D D Steven Spielberg, Bogus Title,
+
+
+Printing inventory:
+---------------------------------------------------------------------------------------------------------
+Title                           | Stock  | Director             | Code | Comments                       | 
+---------------------------------------------------------------------------------------------------------
+Annie Hall                      | 9      | Woody Allen          | F    | 1977                           | 
+Fargo                           | 9      | Joel Coen            | F    | 1996                           | 
+National Lampoon's Animal House | 9      | John Landis          | F    | 1978                           | 
+Pirates of the Caribbean        | 10     | Gore Verbinski       | F    | 2003                           | 
+Sleepless in Seattle            | 9      | Nora Ephron          | F    | 1993                           | 
+When Harry Met Sally            | 9      | Rob Reiner           | F    | 1989                           | 
+You've Got Mail                 | 9      | Nora Ephron          | F    | 1998                           | 
+Good Morning Vietnam            | 9      | Barry Levinson       | D    | 1988                           | 
+Unforgiven                      | 9      | Clint Eastwood       | D    | 1992                           | 
+Good Will Hunting               | 9      | Gus Van Sant         | D    | 2000                           | 
+Silence of the Lambs            | 9      | Jonathan Demme       | D    | 1991                           | 
+Dogfight                        | 8      | Nancy Savoca         | D    | 1991                           | 
+King of Hearts                  | 9      | Phillippe De Broca   | D    | 1967                           | 
+Schindler's List                | 9      | Steven Spielberg     | D    | 1993                           | 
+Holiday                         | 9      | George Cukor         | C    |  9 1938                        | 
+Holiday                         | 10     | George Cukor         | C    |  9 1938                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+Gone With the Wind              | 10     | Victor Fleming       | C    |  2 1939                        | 
+The Wizard of Oz                | 10     | Victor Fleming       | C    |  7 1939                        | 
+The Philadelphia Story          | 8      | George Cukor         | C    |  5 1940                        | 
+The Philadelphia Story          | 10     | George Cukor         | C    |  5 1940                        | 
+The Maltese Falcon              | 9      | John Huston          | C    |  10 1941                       | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+Casablanca                      | 10     | Michael Curtiz       | C    |  8 1942                        | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+It's a Wonderful Life           | 10     | Frank Capra          | C    |  11 1946                       | 
+A Clockwork Orange              | 9      | Stanley Kubrick      | C    |  2 1971                        | 
+Harold and Maude                | 0      | Hal Ashby            | C    |  3 1971                        | 
+---------------------------------------------------------------------------------------------------------
+
+Transaction history for customer Minnie Mouse:
+Good Morning Vietnam borrowed by Minnie Mouse
+The Philadelphia Story borrowed by Minnie Mouse
+Good Will Hunting borrowed by Minnie Mouse
+The Philadelphia Story borrowed by Minnie Mouse
+Harold and Maude borrowed by Minnie Mouse
+
+Transaction history for customer Mickey Mouse:
+A Clockwork Orange borrowed by Mickey Mouse
+Harold and Maude borrowed by Mickey Mouse
+The Maltese Falcon borrowed by Mickey Mouse
+Holiday borrowed by Mickey Mouse
+
+Transaction history for customer Freddie Frog:
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+Harold and Maude returned by Freddie Frog
+Harold and Maude borrowed by Freddie Frog
+
+Transaction history for customer Wally Wacky:
+You've Got Mail borrowed by Wally Wacky
+You've Got Mail returned by Wally Wacky
+Harold and Maude borrowed by Wally Wacky
+Harold and Maude borrowed by Wally Wacky
+National Lampoon's Animal House borrowed by Wally Wacky
+
+Transaction history for customer Porky Pig:
+Annie Hall borrowed by Porky Pig
+When Harry Met Sally borrowed by Porky Pig
+Silence of the Lambs borrowed by Porky Pig
+Dogfight borrowed by Porky Pig
+Harold and Maude borrowed by Porky Pig
+
+==27876== 
+==27876== HEAP SUMMARY:
+==27876==     in use at exit: 0 bytes in 0 blocks
+==27876==   total heap usage: 1,623 allocs, 1,623 frees, 149,659 bytes allocated
+==27876== 
+==27876== All heap blocks were freed -- no leaks are possible
+==27876== 
+==27876== For counts of detected and suppressed errors, rerun with: -v
+==27876== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+-bash-4.2$ 

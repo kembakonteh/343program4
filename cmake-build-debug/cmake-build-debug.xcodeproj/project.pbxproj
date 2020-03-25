@@ -1,0 +1,153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		4A4A6F6C24165A9400A1A30A /* data4commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data4commands.txt; sourceTree = "<group>"; };
+		4A4A6F6D24165A9400A1A30A /* program4 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = program4; sourceTree = "<group>"; };
+		4A4A6F6E24165A9400A1A30A /* data4movies.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data4movies.txt; sourceTree = "<group>"; };
+		4A4A6F6F24165A9400A1A30A /* CMakeFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CMakeFiles; sourceTree = "<group>"; };
+		4A4A6F7024165A9400A1A30A /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4A4A6F7124165A9400A1A30A /* cmake_install.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
+		4A4A6F7224165A9400A1A30A /* program4.cbp */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = program4.cbp; sourceTree = "<group>"; };
+		4A4A6F7324165A9400A1A30A /* CMakeCache.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeCache.txt; sourceTree = "<group>"; };
+		4A4A6F7424165A9400A1A30A /* data4customers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data4customers.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4A4A6F6624165A9400A1A30A = {
+			isa = PBXGroup;
+			children = (
+				4A4A6F6C24165A9400A1A30A /* data4commands.txt */,
+				4A4A6F6D24165A9400A1A30A /* program4 */,
+				4A4A6F6E24165A9400A1A30A /* data4movies.txt */,
+				4A4A6F6F24165A9400A1A30A /* CMakeFiles */,
+				4A4A6F7024165A9400A1A30A /* Makefile */,
+				4A4A6F7124165A9400A1A30A /* cmake_install.cmake */,
+				4A4A6F7224165A9400A1A30A /* program4.cbp */,
+				4A4A6F7324165A9400A1A30A /* CMakeCache.txt */,
+				4A4A6F7424165A9400A1A30A /* data4customers.txt */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		4A4A6F6B24165A9400A1A30A /* cmake-build-debug */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 4A4A6F7524165A9400A1A30A /* Build configuration list for PBXLegacyTarget "cmake-build-debug" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/kembakonteh/Desktop/CSS343/program4/cmake-build-debug";
+			dependencies = (
+			);
+			name = "cmake-build-debug";
+			passBuildSettingsInEnvironment = 1;
+			productName = "cmake-build-debug";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		4A4A6F6724165A9400A1A30A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 4A4A6F6A24165A9400A1A30A /* Build configuration list for PBXProject "cmake-build-debug" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A4A6F6624165A9400A1A30A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A4A6F6B24165A9400A1A30A /* cmake-build-debug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4A4A6F6824165A9400A1A30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		4A4A6F6924165A9400A1A30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		4A4A6F7624165A9400A1A30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "cmake-build-debug";
+			};
+			name = Debug;
+		};
+		4A4A6F7724165A9400A1A30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "cmake-build-debug";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A4A6F6A24165A9400A1A30A /* Build configuration list for PBXProject "cmake-build-debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4A6F6824165A9400A1A30A /* Debug */,
+				4A4A6F6924165A9400A1A30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4A6F7524165A9400A1A30A /* Build configuration list for PBXLegacyTarget "cmake-build-debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4A6F7624165A9400A1A30A /* Debug */,
+				4A4A6F7724165A9400A1A30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A4A6F6724165A9400A1A30A /* Project object */;
+}
